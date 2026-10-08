@@ -1,0 +1,280 @@
+.navbar {
+  width: 100%;
+  min-height: 75px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 7%;
+
+  background-color: #ffffff;
+
+  box-sizing: border-box;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  border-bottom: 2px solid #c1121f;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.navbar-logo a {
+  text-decoration: none;
+
+  color: #c1121f;
+
+  font-size: 30px;
+
+  font-weight: 800;
+
+  letter-spacing: 5px;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.navbar-links {
+  display: flex;
+
+  align-items: center;
+
+  gap: 30px;
+}
+
+
+.navbar-links > a,
+.products-menu > a {
+  text-decoration: none;
+
+  color: #222;
+
+  font-size: 15px;
+
+  font-weight: 500;
+
+  transition: 0.3s;
+}
+
+
+.navbar-links > a:hover,
+.products-menu > a:hover {
+  color: #c1121f;
+}
+
+
+/* =========================
+   PRODUCTS DROPDOWN
+========================= */
+
+.products-menu {
+  position: relative;
+}
+
+
+.products-menu > a {
+  display: flex;
+
+  align-items: center;
+
+  gap: 5px;
+}
+
+
+.products-menu > a span {
+  font-size: 12px;
+}
+
+
+.dropdown {
+  position: absolute;
+
+  top: 35px;
+  left: -20px;
+
+  width: 210px;
+
+  background: white;
+
+  border-top: 3px solid #c1121f;
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.12);
+
+  padding: 10px 0;
+
+  display: none;
+}
+
+
+.dropdown a {
+  display: block;
+
+  padding: 12px 20px;
+
+  color: #333;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  transition: 0.3s;
+}
+
+
+.dropdown a:hover {
+  background: #fff5f5;
+
+  color: #c1121f;
+}
+
+
+/* Show dropdown */
+
+.products-menu:hover .dropdown {
+  display: block;
+}
+
+
+/* =========================
+   RIGHT SIDE
+========================= */
+
+.navbar-actions {
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+}
+
+
+/* Cart */
+
+.cart-icon {
+  position: relative;
+
+  text-decoration: none;
+
+  font-size: 22px;
+}
+
+
+.cart-icon span {
+  position: absolute;
+
+  top: -9px;
+  right: -10px;
+
+  width: 18px;
+  height: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #c1121f;
+
+  color: white;
+
+  border-radius: 50%;
+
+  font-size: 10px;
+}
+
+
+/* Login */
+
+.login-btn {
+  text-decoration: none;
+
+  background: #c1121f;
+
+  color: white;
+
+  padding: 10px 22px;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  border: 1px solid #c1121f;
+
+  transition: 0.3s;
+}
+
+
+.login-btn:hover {
+  background: white;
+
+  color: #c1121f;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 900px) {
+
+  .navbar {
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    padding: 18px 5%;
+  }
+
+
+  .navbar-links {
+    order: 3;
+
+    width: 100%;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+  }
+
+
+  .navbar-actions {
+    margin-left: auto;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .navbar-logo a {
+    font-size: 25px;
+  }
+
+
+  .navbar-links {
+    gap: 15px;
+  }
+
+
+  .navbar-links > a,
+  .products-menu > a {
+    font-size: 13px;
+  }
+
+
+  .login-btn {
+    padding: 8px 15px;
+  }
+
+}

@@ -1,0 +1,202 @@
+/* =========================
+   REGISTER PAGE
+========================= */
+
+.register-page {
+  min-height: 80vh;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 60px 6%;
+
+  background: #fff5f5;
+}
+
+
+.register-container {
+  width: 100%;
+
+  max-width: 500px;
+
+  background: white;
+
+  box-shadow:
+    0 15px 40px rgba(0, 0, 0, 0.10);
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.register-header {
+  padding: 30px;
+
+  text-align: center;
+
+  background: #c1121f;
+
+  color: white;
+}
+
+
+.register-header p {
+  font-size: 11px;
+
+  letter-spacing: 4px;
+
+  margin: 0 0 8px;
+}
+
+
+.register-header h1 {
+  font-size: 40px;
+
+  letter-spacing: 7px;
+
+  margin: 0;
+}
+
+
+.register-header span {
+  font-size: 13px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.register-form {
+  padding: 35px;
+}
+
+
+.register-form h2 {
+  text-align: center;
+
+  font-size: 24px;
+
+  margin: 0 0 28px;
+}
+
+
+.register-field {
+  display: flex;
+
+  flex-direction: column;
+
+  margin-bottom: 17px;
+}
+
+
+.register-field label {
+  font-size: 13px;
+
+  font-weight: 600;
+
+  margin-bottom: 7px;
+}
+
+
+.register-field input {
+  padding: 12px;
+
+  border: 1px solid #ddd;
+
+  outline: none;
+
+  font-size: 14px;
+}
+
+
+.register-field input:focus {
+  border-color: #c1121f;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.register-submit {
+  width: 100%;
+
+  padding: 14px;
+
+  background: #c1121f;
+
+  color: white;
+
+  border: none;
+
+  cursor: pointer;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  transition: 0.3s;
+}
+
+
+.register-submit:hover {
+  background: #8b0000;
+}
+
+
+/* =========================
+   LOGIN LINK
+========================= */
+
+.login-text {
+  text-align: center;
+
+  color: #666;
+
+  font-size: 14px;
+
+  margin-top: 22px;
+}
+
+
+.login-text a {
+  margin-left: 6px;
+
+  color: #c1121f;
+
+  text-decoration: none;
+
+  font-weight: 600;
+}
+
+
+.login-text a:hover {
+  text-decoration: underline;
+}
+.buy-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 500px) {
+
+  .register-page {
+    padding: 40px 5%;
+  }
+
+
+  .register-form {
+    padding: 28px 22px;
+  }
+
+}

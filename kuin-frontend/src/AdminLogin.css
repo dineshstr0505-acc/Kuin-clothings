@@ -1,0 +1,176 @@
+/* =========================
+   ADMIN LOGIN
+========================= */
+
+.admin-login-page {
+  min-height: 80vh;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 70px 5%;
+
+  background: #fff5f5;
+}
+
+
+.admin-login-container {
+  width: 100%;
+  max-width: 450px;
+
+  background: white;
+
+  padding: 45px;
+
+  box-sizing: border-box;
+
+  border-top: 5px solid #c1121f;
+
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.admin-login-header {
+  text-align: center;
+
+  margin-bottom: 35px;
+}
+
+
+.admin-login-header p {
+  margin: 0;
+
+  color: #c1121f;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 4px;
+}
+
+
+.admin-login-header h1 {
+  margin: 10px 0;
+
+  color: #c1121f;
+
+  font-size: 42px;
+
+  letter-spacing: 7px;
+}
+
+
+.admin-login-header span {
+  color: #777;
+
+  font-size: 14px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.admin-login-form h2 {
+  margin-bottom: 25px;
+
+  color: #222;
+
+  font-size: 20px;
+
+  text-align: center;
+}
+
+
+.admin-login-field {
+  display: flex;
+
+  flex-direction: column;
+
+  margin-bottom: 20px;
+}
+
+
+.admin-login-field label {
+  margin-bottom: 8px;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  color: #333;
+}
+
+
+.admin-login-field input {
+  padding: 14px;
+
+  border: 1px solid #ddd;
+
+  outline: none;
+
+  font-size: 14px;
+
+  box-sizing: border-box;
+}
+
+
+.admin-login-field input:focus {
+  border-color: #c1121f;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.admin-login-submit {
+  width: 100%;
+
+  padding: 15px;
+
+  margin-top: 10px;
+
+  border: 1px solid #c1121f;
+
+  background: #c1121f;
+
+  color: white;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+
+.admin-login-submit:hover {
+  background: #8b0000;
+
+  border-color: #8b0000;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 500px) {
+
+  .admin-login-container {
+    padding: 35px 25px;
+  }
+
+}

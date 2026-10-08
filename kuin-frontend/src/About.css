@@ -1,0 +1,315 @@
+/* =========================
+   ABOUT PAGE
+========================= */
+
+.about-page {
+  width: 100%;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.about-hero {
+  min-height: 55vh;
+
+  display: flex;
+
+  align-items: center;
+
+  padding: 70px 8%;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(120, 0, 0, 0.9),
+      rgba(193, 18, 31, 0.55)
+    ),
+    url("https://images.unsplash.com/photo-1485968579580-b6d095142e6e")
+    center / cover no-repeat;
+
+  color: white;
+}
+
+
+.about-hero p {
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 5px;
+
+  margin-bottom: 20px;
+}
+
+
+.about-hero h1 {
+  font-size: clamp(45px, 7vw, 80px);
+
+  line-height: 1;
+
+  margin: 0 0 25px;
+
+  font-weight: 800;
+}
+
+
+.about-hero span {
+  font-size: 18px;
+
+  letter-spacing: 1px;
+}
+
+
+/* =========================
+   ABOUT MAIN
+========================= */
+
+.about-main {
+  padding: 100px 8%;
+
+  background: white;
+
+  display: flex;
+
+  justify-content: center;
+}
+
+
+.about-text {
+  max-width: 850px;
+
+  text-align: center;
+}
+
+
+.about-label {
+  color: #c1121f;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 4px;
+}
+
+
+.about-text h2 {
+  font-size: 45px;
+
+  line-height: 1.1;
+
+  margin: 15px 0 30px;
+}
+
+
+.about-text p:not(.about-label) {
+  color: #555;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+
+  margin-bottom: 18px;
+}
+
+
+.about-shop-btn {
+  display: inline-block;
+
+  margin-top: 20px;
+
+  padding: 15px 30px;
+
+  background: #c1121f;
+
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  transition: 0.3s;
+}
+
+
+.about-shop-btn:hover {
+  background: #8b0000;
+}
+
+
+/* =========================
+   VALUES
+========================= */
+
+.about-values {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 30px;
+
+  padding: 80px 8%;
+
+  background: #fff5f5;
+}
+
+
+.about-value {
+  text-align: center;
+
+  padding: 35px 25px;
+
+  background: white;
+
+  border: 1px solid #eeeeee;
+}
+
+
+.value-icon {
+  width: 55px;
+
+  height: 55px;
+
+  margin: 0 auto 20px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: #c1121f;
+
+  color: white;
+
+  border-radius: 50%;
+
+  font-size: 22px;
+}
+
+
+.about-value h3 {
+  letter-spacing: 2px;
+
+  margin-bottom: 15px;
+}
+
+
+.about-value p {
+  color: #666;
+
+  line-height: 1.7;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.about-cta {
+  padding: 90px 8%;
+
+  text-align: center;
+
+  background: #c1121f;
+
+  color: white;
+}
+
+
+.about-cta p {
+  font-size: 13px;
+
+  letter-spacing: 4px;
+
+  font-weight: 600;
+}
+
+
+.about-cta h2 {
+  font-size: 42px;
+
+  margin: 15px 0 30px;
+}
+
+
+.about-cta a {
+  display: inline-block;
+
+  padding: 14px 35px;
+
+  background: white;
+
+  color: #c1121f;
+
+  text-decoration: none;
+
+  font-weight: 700;
+
+  transition: 0.3s;
+}
+
+
+.about-cta a:hover {
+  background: #8b0000;
+
+  color: white;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+  .about-values {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .about-hero {
+    min-height: 60vh;
+
+    padding: 50px 6%;
+  }
+
+
+  .about-hero h1 {
+    font-size: 48px;
+  }
+
+
+  .about-main {
+    padding: 70px 6%;
+  }
+
+
+  .about-text h2 {
+    font-size: 34px;
+  }
+
+
+  .about-values {
+    padding: 60px 6%;
+  }
+
+
+  .about-cta {
+    padding: 70px 6%;
+  }
+
+
+  .about-cta h2 {
+    font-size: 32px;
+  }
+
+}
